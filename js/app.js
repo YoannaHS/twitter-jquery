@@ -1,6 +1,17 @@
 $(document).ready(function() {
-  
-})
+  $('.info').css('color','red');
+  $('p').click(function() {
+    $(this).css('color','blue');
+  });
+  var $logo = $('.img-logo');
+  $('button').on('click', function() {
+    $('.img-logo').attr('src','assets/img/tres.jpg');
+  });
+  var $changeImg = $('#changlogo');;
+  $('.btnPrueba').on('click', function() {
+    $('#changlogo').insertAfter('.par');
+  });
+});
 
 
 
