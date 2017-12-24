@@ -1,17 +1,28 @@
 $(document).ready(function() {
-  $('.info').css('color','red');
-  $('p').click(function() {
-    $(this).css('color','blue');
+  $('#insertTwt').on('keydown', function() {
+    $(this).val();
   });
-  var $logo = $('.img-logo');
-  $('button').on('click', function() {
-    $('.img-logo').attr('src','assets/img/tres.jpg');
-  });
-  var $changeImg = $('#changlogo');;
-  $('.btnPrueba').on('click', function() {
-    $('#changlogo').insertAfter('.par');
+  $('#button').on('click', function() {
+    $('#insertTwt').val();
+    $('.probart').append('<li>Este es un tweet</li>');
   });
 });
+
+// Algunos ejercicios prácticos
+// $(document).ready(function() {
+//   $('.info').css('color','red');
+//   $('p').click(function() {
+//     $(this).css('color','blue');
+//   });
+//   var $logo = $('.img-logo');
+//   $('button').on('click', function() {
+//     $('.img-logo').attr('src','assets/img/tres.jpg');
+//   });
+//   var $changeImg = $('#changlogo');;
+//   $('.btnPrueba').on('click', function() {
+//     $('#changlogo').insertAfter('.par');
+//   });
+// });
 
 
 

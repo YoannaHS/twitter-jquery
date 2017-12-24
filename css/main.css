@@ -190,3 +190,7 @@ header {
     display: table;
     clear: both;
 }
+
+.probart {
+    list-style: none;
+}
