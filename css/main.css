@@ -1,20 +1,192 @@
-body {
-	font-family: 'Raleway', sans-serif !important;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.grad70 {
-    background: linear-gradient( rgb(0, 0, 0) 65%, rgb(238, 24, 24));
+header {
+    /* outline: 1px solid red; */
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    position: fixed;
+    z-index: 1000;
+    padding-bottom: 10px;
 }
 
-.container-flex-column {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	padding: 2em;
+#navegador ul {
+    list-style-type: none;
+    text-align: left;
 }
 
-.vh100 {
-	height: 100vh;
+#navegador li {
+    display: inline;
+    font-size: 18px;
+    padding: 20px;
+    cursor: pointer;
 }
 
+#nav-principal {
+    margin: 40px;
+}
 
+#input {
+    text-align: center;
+    margin-top: -5%;
+}
+
+#input input {
+    border-radius: 18px;
+    background-color: #f5f8fa;
+    padding: 7px;
+}
+
+#icono img {
+    width: 32px;
+    position: absolute;
+    margin-left: 58%;
+    margin-top: -35px;
+}
+
+#twittear {
+    float: right;
+    margin-top: -50px;
+}
+
+#icon i {
+    color: #6f7d86;
+}
+
+#icon:hover i {
+    color: #1da1f2;
+}
+
+#twittear button {
+    border-radius: 20px;
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 10px;
+    font-weight: 700;
+    margin-right: 40px;
+}
+
+.imagen-fondo img {
+    width: 100%;
+}
+
+.general-1 {
+    position: absolute;
+    top: 20%;
+    background-color: #fff;
+    width: 20%;
+    padding: 20px;
+    margin-left: 4%;
+}
+
+.general-1 p {
+    margin-left: 35%;
+    text-align: center;
+    margin-top: -20%;
+}
+
+.general-1 img {
+    width: 70px;
+    height: 70px;
+    border-radius: 150px;
+    border: 2px solid #ff00bf;
+}
+
+.general-2 {
+    width: 45%;
+    background-color: #fff;
+    position: absolute;
+    margin-left: 27%;
+    padding: 20px;
+    text-align: center;
+    top: 20%;
+}
+
+.general-2 #photo {
+    width: 70px;
+    height: 70px;
+    border-radius: 150px;
+    border: 2px solid #ff00bf;
+    float: left;
+}
+
+.general-2 #insertTwt {
+    border-radius: 9px;
+    border: 1px solid #1da1f2;
+    width: 85%;
+}
+
+#insertTwt::-webkit-input-placeholder {
+    color: #1da1f2;
+    text-align: center;
+}
+
+.general-2 #agregar {
+    border: 1px solid #0b7bc1;
+    border-radius: 9px;
+    background-color: #1da1f2;
+    color: #fff;
+    padding: 7px;
+    font-weight: 700;
+    margin-left: 73%;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+#agregar:disabled {
+    border: 1px solid #999999;
+	background-color: #cccccc;
+	color: #666666;
+}
+
+.general-2 img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.general-3 {
+    position: absolute;
+    background-color: #fff;
+    width: 20%;
+    padding: 20px;
+    margin-left: 75%;
+    top: 20%;
+}
+
+.general-3 h1 {
+    font-size: 25px;
+}
+
+.general-3 button {
+    color: #1da1f2;
+    padding: 5px;
+    background-color: white;
+    border-style: none;
+    cursor: pointer;
+}
+/* Marcando nuevos estilos */
+.slateblue {
+    color: slateblue;
+}
+
+.olivedrab {
+    color: olivedrab;
+}
+
+.new-tweet {
+    outline: 1px solid #1da1f2;
+    background-color: #fff;
+	border-radius: 15px;
+    margin: 1.5% auto;
+    padding: 1%;
+    color: black;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
